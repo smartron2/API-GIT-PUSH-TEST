@@ -1,0 +1,24 @@
+class S1
+{
+public static int wordcount(String s)
+{
+int i=0,c=0;
+String w="";
+String p[];
+for(i=0;i<s.length();i++)
+{
+char ch=s.charAt(i);
+if(ch!=32)
+{
+w+=ch;
+p=w;
+}
+}
+return (p.length);
+}
+public static void main(String args[])
+{
+int r=wordcount("how are you?");
+System.out.println(r);
+}
+}
