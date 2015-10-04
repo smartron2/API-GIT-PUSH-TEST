@@ -1,0 +1,21 @@
+class A21
+{
+public static void frequencycount(int x[])
+{
+int i=0,j=0,c=0;
+for(i=0;i<x.length;i++)
+{
+c=1;
+for(j=i+1;j<x.length;j++)
+{
+if(x[i]==x[j])
+c++;
+}
+System.out.println(x[i]+" "+c);
+}
+}
+public static void main(String args[])
+{
+frequencycount(new int[]{1,3,2,2,5});
+}
+}
