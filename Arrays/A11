@@ -1,0 +1,28 @@
+class A12
+{
+public static void matrixtranspose(int x[][])
+{
+int i=0,j=0;
+int b[][]=new int[2][2];
+for(i=0;i<x.length;i++)
+{
+for(j=0;j<x[i].length;j++)
+{
+b[j][i]=x[i][j];
+}
+}
+for(j=0;j<x.length;j++)
+{
+for(i=0;i<x[j].length;i++)
+{
+System.out.print(b[j][i]);
+System.out.print(" ");
+}
+System.out.println(" ");
+}
+}
+public static void main(String args[])
+{
+matrixtranspose(new int[][]{{1,2},{3,4}});
+}
+}
