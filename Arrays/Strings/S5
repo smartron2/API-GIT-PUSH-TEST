@@ -1,0 +1,22 @@
+class S5
+{
+public static boolean palindrome(String s)
+{
+int i;
+String w="";
+for(i=s.length()-1;i>=0;i--)
+{
+char ch=s.charAt(i);
+w+=ch;
+}
+if(w.equals(s))
+return true;
+else
+return false;
+}
+public static void main(String args[])
+{
+boolean r=palindrome("how are you?");
+System.out.println(r);
+}
+}
