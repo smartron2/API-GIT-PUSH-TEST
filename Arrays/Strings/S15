@@ -1,0 +1,27 @@
+class S24
+{
+public static void triangle4(String s1)
+{
+int i=0,j=0,k,l=s1.length();
+for(i=0;i<s1.length();i++)
+{
+for(j=0;j<l;j++)
+{
+System.out.print(s1.charAt(j));
+}
+l--;
+for(k=0;k<i;k++)
+System.out.print("  s");
+for(j=i;j<s1.length();j++)
+{
+System.out.print(s1.charAt(j));
+}
+
+System.out.println("");
+}
+}
+public static void main(String args[])
+{
+triangle4("ducat");
+}
+}
