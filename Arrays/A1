@@ -1,0 +1,18 @@
+class A1
+{
+public static int max(int a[])
+{
+int m=0,i;
+for(i=0;i<a.length;i++)
+{
+if(a[i]>m)
+m=a[i];
+}
+return m;
+}
+public static void main(String args[])
+{
+int r=max(new int[]{10,20,30,40});
+System.out.println(r);
+}
+}
