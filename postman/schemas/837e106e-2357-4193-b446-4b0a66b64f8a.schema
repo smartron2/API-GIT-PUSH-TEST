@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: BRANCH
+  version: BRANCH123
   title: newAPI
 servers:
   - url: 'http://localhost:3000'
